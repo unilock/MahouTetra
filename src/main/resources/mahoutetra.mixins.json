@@ -1,13 +1,13 @@
 {
   "required": true,
+  "minVersion": "0.8",
   "package": "cc.unilock.mahoutetra.mixin",
   "compatibilityLevel": "JAVA_17",
-  "minVersion": "0.8",
   "mixins": [
+    "ProjectionSpellEffectMixin",
+    "WeaponProjectileBowMixin"
   ],
-  "client": [
-    "ExampleMixin"
-  ],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   }

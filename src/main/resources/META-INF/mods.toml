@@ -1,4 +1,4 @@
-modLoader = "javafml"
+modLoader = "lowcodefml"
 loaderVersion = "[43,)"
 license = "MIT"
 
@@ -7,9 +7,9 @@ modId = "mahoutetra"
 version = "${version}"
 displayName = "MahouTetra"
 # logoFile="icon.png" #optional
-# authors="Me!" #optional
+authors="unilock"
 description = '''
-MahouTetra
+Adds compatibility between Mahou Tsukai's "Weapon Projectile Bow" and "Projection" spell and Tetra's tools and weapons
 '''
 
 [[dependencies.mahoutetra]]
@@ -25,3 +25,17 @@ mandatory = true
 versionRange = "[1.19.2,)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.mahoutetra]]
+modId="mahoutsukai"
+mandatory=true
+versionRange="[1.19.2-v1.34.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.mahoutetra]]
+modId="tetra"
+mandatory=true
+versionRange="[5.0.0,)"
+ordering="AFTER"
+side="BOTH"
